@@ -1,0 +1,21 @@
+Swing/AWT/Event/JDBC/Jsp/Senlet
+
+Swing:-
+
+* Framework of java
+* used to develop windows based application
+* port of jfc(java foundation class)
+* collection of GUI components 
+* all Components must be started with capital'J'Character.
+* light weight components
+* platform indepent
+* rich set of functionility with GUI components.
+* fast execution rather then AWT components.
+
+Swing Components:-
+
+* All swing components are class
+* all swing components are avilable in "javax.swing" package.
+		e.g - JFrame,JLable,JRadioButton,JCheckBox,JComboBox,ETC.
+
+=> how write programe in swing ?

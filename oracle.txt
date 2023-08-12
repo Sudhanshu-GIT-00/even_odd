@@ -1,0 +1,95 @@
+select cource_id, univercity from corce where univercity='ppu';
+
+desc database_name; :- decribe to display the structure of the table
+
+Alter :-to modify the structure of table can be modified by using the alter table command.
+Alter table allow changing the structure of an existing table with alter table it is possible
+to add or delete column , create or destroy inded, change the datatype of existing column .
+Or rename column alos increased the field size.
+                       Alter table works by making a temporary copy of the original table
+the alteration is perfomed of the copy and the orignial table is deletd and the new one is 
+rename.
+(1)Adding new column
+   exaple - ALTER TABLE_NAME
+            ADD(FIELD_NAME VARCHAR2(10));
+			
+(2)	Modifying Existing column
+    example - ALTER TABLE STUDENT 
+	          MODIFY(COURSE_NAME VARCHAR2(42));
+
+(3) Truncated table_name;		   
+     
+	 
+(4) Update
+    example:- ALTER TABLE STUDENT
+	          MODIFY(DURATION CHAR(5));
+
+(5) rename 
+	example:- alter table_name
+			  rename column old_name to new_name ;
+(6) Drop (structure and data both are deleted)
+	example:- alter table_name
+			  drop table table_name;
+	
+(7)restriction on alter command decrase the size of the column if table data exit. 
+(8)Change datatype if table is not empty.
+
+
+===> update existing record  in DML(data manuepulation language)
+	 syentx:-
+			  update table_name
+			  set column_name = 'new_value' where column_name = 'old_value';
+
+(q1).update record from student table in city field from bombay to goa & multipal value.
+	ANS:-->		  update table_name
+			  set column_name = '&column_name' where column_name = '&column_name';
+			  then press / and then enter
+			  
+			  
+(*)--> primery key define as table level
+								  create table table_name
+								  (id char(5),roll char(5),name varchar2(40),course char(5),fee number(8,2)
+								   ,primery key(id,roll));
+								   insert into table_name values('&id','&roll','&name',&cource','&fee')
+								   enter the value then press \
+								   then press 
+								   select id, roll from rahul;
+								   
+unique key constant :--> the unique column constant permits multipal enteryies the NULL into the column
+							unique key constant only chack duplicate value this is the diffrence between
+							unique key and primery key.
+unique key constant define add column level
+											create table table_name
+											(client_id char(10)unique,name char(20),city char(10));
+											insert into table_name values('&client_id','&name','&city')
+											enter the value then press \
+												then press 
+												then enter the values
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

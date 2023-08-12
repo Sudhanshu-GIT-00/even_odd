@@ -1,6 +1,7 @@
 import java.io.*;
 import java.lang.*;
-class test
+import java.util.Scanner;
+/*class test
 {
 	public static void main(String args[])
 	{
@@ -11,7 +12,7 @@ class test
 			System.out.println(z);
 		
 	}
-}
+}*/
 /*ID no.			 - 7959
 Name.			 - Sudhanshu Ranjan
 Course.			 - BCA
@@ -114,10 +115,78 @@ dynamic declaration :- size should be define after declaration.It means first we
 						
 */
 
+/*Double Dimension Array:-
+	> declaration :-
+		type arr[][]=new type[row][col];
+		type [][]arr=new type[row][col];*/
+		
+/*class matrix
+	{
+		public static void main(String arrgs[])
+		{
+			Scanner z=new Scanner(System.in);
+			int n[][]=new int [3][3];
+			int i,j;
+			System.out.println("enter value in 3*3 matrix");
+			for(i=0;i<3;i++)
+				for(j=0;j<3;j++)
+					n[i][j]=z.nextInt();
+				
+			for(i=0;i<3;i++)
+			{
+				for(j=0;j<3;j++)
+					//System.out.print(n[i][j]+"\t");
+					System.out.print(n[j][i]+"\t");
+				System.out.println();
+			}
+		}
+	}*/
+
+/*class Arthmetics
+	{
+		public static void main(String arrgs[])
+		{
+			Scanner z=new Scanner(System.in);
+			int n[][]=new int [3][3];
+			int i,j,k,s;
+			System.out.println("enter value in 3*3 matrix");
+			for(i=0;i<3;i++)
+				for(j=0;j<3;j++)
+					n[i][j]=z.nextInt();
+				
+			for(i=0;i<3;i++)
+			{
+				for(j=0;j<3;j++)
+				{
+					for(k=0;k<3;k++)
+					{
+						s=s+a[i][k]*b[k][j]; formula for array metrix multiplication  
+					c[i][j]=s;
+					//System.out.print(n[i][j]+"\t");
+					System.out.print(n[j][i]+"\t");
+				System.out.println();
+			}
+		}
+	}*/
 
 
+import java.util.Scanner;
 
+public class EvenOdd {
 
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = reader.nextInt();
+
+        if(num % 2 == 0)
+            System.out.println(num + " is even");
+        else
+            System.out.println(num + " is odd");
+    }
+}
 
 
 

@@ -1,0 +1,19 @@
+color code of rigester 
+COLOUR DIGIT  MULTIPLIER 	TOLERANCE
+black 	0		10=1	
+brown	1	  10*1=10			1
+red		2		10*2			2
+orange	3	 	10*3
+yellow	4		10*4
+green	5		10*5
+blue	6		10*6			0.5
+violet	7		10*7			0.25
+gray	8		10*8			0.1
+white	9	 	10*9
+gold			10-1=0.1		5%
+silver			10-2=0.01		10%
+none							15%
+
+#-> through joystic controling to Bo moters with joystic the below curcit diagram.     
+    joystic is a combination two potentio meater the first potentio meater controling x diraction and 2nd y
+    diraction the below figure curcit show the diagram.

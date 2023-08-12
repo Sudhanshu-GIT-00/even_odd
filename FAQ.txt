@@ -1,0 +1,36 @@
+genreic pointer:- any type of veriable  memorey address store in memory.it is also void pointer.it is also return type of realloc()
+range of int data type:-> -2 power bit-1 to 2 power bit -1
+							e.g:-> -2 power 15 to 2 power 15 -1
+							s.o.pln(integer.max-value);
+							s.o.pln(integer.min-value);
+			
+operation of stack
+				push
+				pop
+				peep
+				underflow(top==-1)
+				overflow(top==size-1)
+				LIFO
+				peek
+				
+application of stack->prefix,postfix,infix
+polish notation
+			infix
+			prefix,postfix does not contain ()
+			
+			
+DS
+	primtive DS--->int,float,dubble,etc.
+	non-primtive DS	
+					liniear DS--> array,stack,quee,linklist
+								
+					non-liniear DS--->Tree,Graph
+									homegueanas
+									non-homegueanas
+									
+QUEUE
+	linear
+	circual
+	priorty
+	dequeue
+			

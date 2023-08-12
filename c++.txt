@@ -1,0 +1,222 @@
+variable:--->variable is an identiyfire that refers the data item store at a particuler memmory location.
+syentex:-
+	datatype variable_name;
+	ex int a,b;
+	
+initilazation of variable in c++:->
+->static initilazation
+->dynimic initilazation
+	e.g. write a program in c++ sum of two number useing static and dynimic initilazation
+	int main()
+	{
+	int a=10,b; // a is static
+	cout<<"\nenter second no";
+	cin>>b;  	// b is dynimic
+	cout<<"\n sum="<<a+b;
+	return 0;
+	}
+	
+const qualifire:->
+#define PI 3.14
+		or
+const datatype variable_name=value;
+e.g.	const float pi=3.14;
+
+refrence variable:-> is used in c++ which provied as alies for and allready defined variable 
+syentex:-
+datatype &RefrenceVariableName=variable_name;
+	e.g. int & marks= value;
+	
+Q1.write a program to finde out some, avarege,largest,smallest among n number.
+
+type conversion:- as like c language , c++ we can convert the type of data from one datatype tp another
+				  as for our convenience.the data may be either promoted or demoted there are two ways
+1:- implicit type conversion:-:- whenevre the data will converted autometcally in higher range of datatype,
+	whithout any programer interfrence then that conversion is known as implicit type conversion. In this type 
+	conversion data will be promoted only
+	syentex:-
+				int a=5;   //higher range demoted
+				float b=2;
+				count<<a+b;
+
+
+2:- explicit type conversion:-:- whenevre there is provision to demoted as well as promoted the data as 
+							     programer convenience.then the type of conversion is known as explicit 
+								 type conversion.In this type of conversion data will be either promoted
+								 or demoted as per requirement.It is  also known as type casting.
+	syentex:-
+				int main()
+				{
+					int a=10;
+					float b=5.7;
+					count<<(int)a+b;
+					return 0;
+				} 
+								
+FUNCTION:---> It is self content programer used to accoemplics specfic task . it used by the programer for avoiding
+				entry of same set of instruction noumber of within the programer in other words , it prevence the reptation
+				of code and also redeces amount memory store the input program.
+				devision of large task within the programer into function not only enahance readability and maintanablilty
+				of a program but, also eases debuging of the program.
+
+.--> TYPE OF FUNCTION => it is set of program used in program as per recuirement with 
+ 
+							=> library of Built or pre define or system define
+							=> User Define:- It is the previlig provider by the compiler to desing the on procedure as per there
+												requirement
+										e.g- sqrt()
+											 abs()
+											 atoi()
+											 itoa()
+											 strrev()
+											 strcat()
+											 strcmp()
+ PART OF FUNCTION:-   Function Prototype
+					  Function Declarection
+					  Function Defination
+					  Calling Of Function:-	call by value
+											call by refrence
+											call by address
+					  Actual / Formal Argument
+					  Returen Statement
+		
+			
+==>I c++ any function is called a three diffrent manaer as follows:-
+																	1.call by value
+																					arrgument	address	 		formal
+																			calling by value	data variable	data variable					
+																			calling by refers	data variable	&data variable	
+																		   calling by address	&data variable	*pointer variable	
+																			Q1.write a program to find out sum,avarege,largest,smallest an squre
+																			of any no useing call by value,refrence and address.if three numbers
+																			in enter to keybord.
+																			
+																	2.call by refrence
+																	3.call by address
+		
+		function overloading  is compile time polimorphism in which we are useing same name of function
+		for defining multipale signuture in our program compiler finailez the particullur function on the bnasis of number of arguments and data type
+		used by the function.beacuse the particulur signuture will be selected at the time of compileation of program so function overloading is also known as early binding
+		as well as static binding
+
+FOR.ex wrp dum of two no useing function overloading
+
+#--> CLASSES AND OBJECT
+*class:-->It is grouping similar type of objects . it an expendend concept of datastrcture,insted of 
+			holding only data, it can also hold function.that means it hold both data and function.
+			
+*object:--> An object is instantiation of a class in terms of variables class could be a datatype,and 
+			object could be variable.
+			
+*Declarection of class:--> A class can be declared as follows 
+							syentex:-
+										class <class_name>
+										{//access specifiers|
+											// data member
+											// access specifiers
+											// member function
+										};
+										e.g:
+												class A
+												{
+												private:
+													int a,b;
+												public:
+													void in();
+												};				
+
+										
+*Access specifiers:--> Access specifiers represent visibility mode of class members that means it sets
+						the accessibility out side of class.
+						there are three types of access specifiers used in c++ to set visibility as follows:
+						
+		->private:-->it is defult access specifiers for the class.
+					 it not directly accessable out side of the calss.
+					 it not needed mention to private access specifiers of the class.
+					 it can not particapite inheretance.private keybord is for this specifiers.
+					 it is directly accessable with the friend function of the class.
+					 
+		->protected:-->It is also not directly accessable out side of the class in case of single class.
+					   protected keybord is used . it suppourt inheretance
+					   need to be mention before the declration of class member and directly accessable with
+					   friend function.
+						
+		->public:-->it accessable out side of the class .
+					particapited in inheretance.
+					public keybord is used.
+			
+Defining a class member function--> we can define a class member function in to diffrent manaer
+								-->inside :-> the class we declared and define member function inside of
+								the class. in this mode declaration the member function function is prototype
+								declaration and deffine.
+								e.g:
+										classs A
+										{
+										int id;
+										public:
+											void in()
+											{
+											count<<"\nEnter id";
+											cin>>id;
+											}
+										};
+								->outeside :-> in this mode defination of the class the member function is declar
+												inside the class and defined outeside of the class.
+
+												return type <class name>::function_name()
+												{
+												//body
+												}
+					   
+												   e.g: class A
+												   { int id;
+												   public:
+													void in();
+													};
+													
+													void a::in()
+													{
+													count<<"\nenter id";
+													cin>>id;
+													}
+Q. wap to find function of any no useing inside an ouside of declaration.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
